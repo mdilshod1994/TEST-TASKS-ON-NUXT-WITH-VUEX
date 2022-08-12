@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container mob-container">
         <div class="banner">
             <div class="banner__content">
                 <h1 class="banner__title">

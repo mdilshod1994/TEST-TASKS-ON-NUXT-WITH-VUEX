@@ -34,60 +34,6 @@
 </template>
 <script>
 export default {
-    data() {
-        return {
-            temp: [
-                {
-                    img: require('../assets/images/1.png'),
-                    title: 'Фотографы',
-                    qnty: 150000,
-                    price: 570
-                },
-                {
-                    img: require('../assets/images/1.png'),
-                    title: 'Фотографы',
-                    qnty: 150000,
-                    price: 570
-                },
-                {
-                    img: require('../assets/images/1.png'),
-                    title: 'Фотографы',
-                    qnty: 150000,
-                    price: 570
-                },
-                {
-                    img: require('../assets/images/1.png'),
-                    title: 'Фотографы',
-                    qnty: 150000,
-                    price: 570
-                },
-                {
-                    img: require('../assets/images/1.png'),
-                    title: 'Фотографы',
-                    qnty: 150000,
-                    price: 570
-                },
-                {
-                    img: require('../assets/images/1.png'),
-                    title: 'Фотографы',
-                    qnty: 150000,
-                    price: 570
-                },
-                {
-                    img: require('../assets/images/1.png'),
-                    title: 'Фотографы',
-                    qnty: 150000,
-                    price: 570
-                },
-                {
-                    img: require('../assets/images/1.png'),
-                    title: 'Видеооператоры',
-                    qnty: 150000,
-                    price: 570
-                },
-            ]
-        }
-    },
     computed: {
         categories() {
             return this.$store.getters.getCategories
