@@ -1,0 +1,359 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 12px 'Noto Sans';
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.main {
+    padding: 0 0 67px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Source Sans Pro';
+    margin-bottom: 25px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 33px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.btns-log-in {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.btns-log-in button:nth-child(1) {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 13px;
+    color: #707070;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.btns-log-in button:nth-child(2) {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 13px;
+    color: #151515;
+    background: #fff;
+    border: 1px solid #434343;
+    border-radius: 3px;
+    height: 38px;
+    padding: 0 14px;
+}
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/banner.png') no-repeat center /cover;
+    width: 100%;
+    height: 440px;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.banner__content {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 70%;
+}
+
+.banner__title {
+    text-align: center;
+    color: #fff;
+    font-size: 32.3529px;
+    line-height: 33px;
+}
+
+.categories__title {
+    font-size: 33px;
+    line-height: 34px;
+    color: #404040;
+    margin-bottom: 25px;
+}
+
+.categories__title span {
+    font-weight: 700;
+    font-size: 26px;
+    color: #B9B9B9;
+}
+
+.category__list {
+    display: grid;
+    grid-template-columns: repeat(6, 166px);
+    justify-content: space-between;
+    grid-row-gap: 17px;
+}
+
+.category__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    padding: 17px 19px;
+    background: #fff;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.category__item:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.category__img {
+    width: 127px;
+    height: 89px;
+    border-radius: 12px;
+}
+
+.category__title {
+    font-weight: 500;
+    font-size: 14px;
+    color: #161719;
+}
+
+.category__qnty {
+    font-weight: 300;
+    font-size: 12px;
+    color: #828282;
+}
+
+.category__price {
+    font-weight: 500;
+    font-size: 12px;
+    color: #313131;
+}
+
+#registration,
+#login {
+    display: none;
+}
+
+#registration.active,
+#login.active {
+    display: block;
+}
+
+.login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.login-body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.login__content {
+    background: #fff;
+    padding: 70px 16px 40px;
+    Width: 375px;
+    Height: 549px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.11);
+    border-radius: 22px;
+}
+
+.login__title {
+    font-weight: 600;
+    font-size: 27px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 38px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.input-container {
+    height: 48px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-container:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+
+.get-in-touch__input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 20px;
+    border: 1px solid #858C94;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.2s;
+}
+
+.get-in-touch__input:focus {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.get-in-touch__input:focus+.get-in-touch__label,
+.filled {
+    top: -10px;
+    left: 0px;
+    font-size: 14px;
+    background: #fff;
+    padding: 0 5px 0 0;
+}
+
+.get-in-touch__label {
+    position: absolute;
+    left: 15px;
+    top: 11px;
+    z-index: 1;
+    font-size: 16px;
+    transition: all 0.2s;
+    cursor: pointer;
+    user-select: none;
+    color: #2C3A4B;
+}
+
+.get-in-touch__label.filled {
+    top: -10px;
+    left: 0px;
+    font-size: 14px;
+    background: #fff;
+}
+
+.login-form button {
+    background: linear-gradient(116.86deg, #3E6480 33.19%, #244759 91.1%);
+    border-radius: 888px;
+    height: 44px;
+    border: none;
+    color: #F2F2F2;
+    font-weight: 800;
+}
+
+.validation-text {
+    margin: 15px 0 5px;
+    font-size: 13px;
+}
+
+.validation__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.validation__item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+}
+
+.validation__item svg {
+    width: 10px;
+}
+
+.agreement {
+    font-size: 13px;
+}
+
+.agreement a {
+    text-decoration: none;
+    color: #5CA2A5;
+}
+
+.agreement a:hover {
+    text-decoration: underline;
+}
+
+.greeting {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.greeting.show {
+    z-index: 9;
+    visibility: visible;
+    opacity: 1;
+}
+
+.greeting-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.greeting__content {
+    background: #fff;
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 10px inset rgba(0, 0, 0, 0.3);
+}
+
